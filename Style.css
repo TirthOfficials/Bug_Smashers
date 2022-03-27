@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&family=Ubuntu&display=swap');
+
+
+:root{
+    --clr-neutral-900: hsl(207,19%,9%);
+    --clr-neutral-100: hsl(0,0%,100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    /* background-color: black; */
+    align-items: center;
+    display: flex;
+    height: 50px;
+    padding-top: 27px;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+
+/* .dropdown{
+    color: black;
+} */
+
+.dropdown{
+    padding: 12px !important;
+}
+
+.dropdown-menu li a{
+    color: var(--clr-neutral-900) !important;
+    font-weight: bold;
+}
+
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    /* display: flex; */
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+    transform: scale(1.05);
+    /* font-size: 16px; */
+    font-family: 'Ubuntu', sans-serif;
+    /* display: flex; */
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: solid white;
+    border-radius: 70%;
+}
+
+
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    background: transparent;
+    color: white;
+}
+
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('Image/Img_BG2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    /* height: 100px; */
+}
+
+
+.firstsection{
+    /* display: flex; */
+
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+
+.firsthalf {
+    width: 90%;
+    /* height: 75%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* .buttons{
+    display: flex;
+} */
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 100%;
+    padding: 20px;
+    border:4px solid white;
+    border-radius: 70%;
+    display: block;
+    margin: auto;
+}
+.secondhalf:hover{
+    transform: rotate(40deg);
+    transition: transform 0.2s linear;
+}
+
+
+.logo img:hover{
+    transform: rotate(40deg);
+    transition: transform 0.2s linear;
+}
+
+.text-big {
+    font-size: 70px;
+}
+.text-small{
+    font-size: 30px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    /* font-size: 18px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;   
+}
+
+.btn-dark{
+    border: 2px solid grey;
+    color: black;
+}
+
+.section{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0 30px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+.sectionsubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: #21083a;
+    height: 900px;
+}
+
+.text-centre{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    /* padding: 30px; */
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 35px;
+}
+
+.text-footer{
+    text-align: center;
+    /* padding-top: 10px; */
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.form{
+    max-width: 62%;
+    margin: 42px auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+.form-input{
+    width: 100%;
+    margin: 30px 0;
+    padding: 5px 3px;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 3px;
+}
+
+
+/* Recent Prod */
+.Recent_App{
+    background-color: #23083f;
+    /* text-align: center; */
+    height: 700px;
+    background-blend-mode: darken;
+}
+
+/* -------------------------------------- */
+/* Recent Apps Card */
+
+
+
+.Mega{
+    display: flex;
+}
+
+/* Card-1 */
+.card1{
+    color: var(--clr-neutral-100);
+    background-image: url("Image/lap-6.jpg");
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 33%;
+    margin-left: 51px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card1:hover{
+    transform: scale(1.05);
+
+}
+.card1:hover .card-content>*{
+    opacity: 1;
+    transition: opacity 500ms linear;
+}
+.card1:hover .card-content{
+    transform: translateY(0);
+}
+
+.card1:hover .card-title::after{
+    transform: scaleX(1);
+}
+
+/* Card-2 */
+.card2{
+    color: var(--clr-neutral-100);
+    background-image: url("Image/LG_TV-1.jpg");
+    background-size: cover;
+    padding: 8rem 0 0;
+    width: 27%;
+    margin-left: 100px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card2:hover{
+    transform: scale(1.05);
+
+}
+
+.card2:hover .card-content>*{
+    opacity: 1;
+    transition: opacity 500ms linear;
+}
+.card2:hover .card-content{
+    transform: translateY(0);
+}
+
+.card2:hover .card-title::after{
+    transform: scaleX(1);
+}
+
+
+/* Card-3 */
+.card3{
+    color: var(--clr-neutral-100);
+    background-image: url("Image/Iphone_1.jpg");
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 33%;
+    margin-left: 100px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card3:hover{
+    transform: scale(1.05);
+
+}
+
+.card3:hover .card-content>*{
+    opacity: 1;
+    transition: opacity 500ms linear;
+}
+.card3:hover .card-content{
+    transform: translateY(0);
+}
+
+.card3:hover .card-title::after{
+    transform: scaleX(1);
+}
+
+
+
+.card-content{
+    padding: 1.5em;
+    background: linear-gradient(
+        hsl(0, 0%, 0% / 0),
+        hsl(20, 0%, 0% / 0.3) 20%,
+        hsl(0, 0%, 0% / 1)
+    );
+    color: white;
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+    list-style: none;
+}
+
+.card-content > *:not(.card-title){
+    opacity: 0;
+}
+.card-body{
+    list-style: none;
+}
+
+.card-title{
+    position: relative;
+}
+
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    background: var(--clr-accent-400);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: left;
+    transition: transform 500ms ease;
+}
+
+
+.card-body{
+    color: rgb(255, 255, 255/0.85);
+}
+
+.button {
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus{
+    background-color: var(--clr-neutral-100);
+    /* border-radius: 0.25em; */
+}
+
+/* -------------------------------------------- */
+
+.cont{
+    text-align: center;
+    color: white;
+    font-family:  'Ubuntu', sans-serif;
+    font-size: 23px;
+}
+
+.Tem{
+    padding: 0px 30px;
+}
+/* About us */
+.aboutus{
+    background-color: #18042c;
+    text-align: center;
+    height: 700px;
+    background-blend-mode: darken;
+}
+
+.btn-low{
+    background: transparent;
+    color: white;
+}
+.form-input{
+    background: transparent;
+    border: solid 2px white;
+}
+.Title{
+    text-align: center;
+    color: white;
+    padding: 50px 0px;
+}
+@media only screen and (max-width: 1214px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 447px;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+       max-width: 100%;
+       flex-direction: column-reverse;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    /* .form{
+        flex-direction: column;
+    } */
+    .paras{
+        padding: 0%;
+    }
+    /* .Mega{
+        flex-direction: column;
+        padding: 20px;
+    } */
+}
