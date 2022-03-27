@@ -1,0 +1,29 @@
+.table{
+    color: white !important;
+}
+
+h1{
+    color: white !important;
+}
+
+body{
+    background-image: url("Image/Lap1.jpg");
+    
+}
+
+
+.cont{
+    text-align: center;
+    /* color: white; */
+    /* display: flex;
+    flex-direction: column2; */
+}
+
+.Inp{
+    color: white !important; 
+    background: transparent;
+}
+.Btto{
+    color: white !important;
+    background-color: transparent;
+}
