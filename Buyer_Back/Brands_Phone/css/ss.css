@@ -1,0 +1,27 @@
+.table{
+    color: black !important;
+}
+
+h1{
+    color: black !important;
+}
+
+body{
+    background-image: url("Image/70.jpg");
+    
+}
+
+
+.cont{
+    text-align: center;
+    /* color: white; */
+    /* display: flex;
+    flex-direction: column2; */
+}
+
+.Inp{
+    color: black
+}
+.Btto{
+    color: black;
+}
