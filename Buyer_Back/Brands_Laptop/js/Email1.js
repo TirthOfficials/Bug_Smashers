@@ -12,11 +12,11 @@
     //var Body = 'Name: '+name2+'<br>Email: '+email2+'<br>'+mess;
   
   Email.send({
-    SecureToken : "7590a634-fc1b-40b1-857c-3398294a8beb",
+    //SecureToken : "7590a634-fc1b-40b1-857c-3398294a8beb",
     //SecureToken : "smtp.gmail.com",
-    Host : "smtp.elasticemail.com",
+    Host : "smtp.gmail.com",
     Username : "bugsmashers01@gmail.com",
-    Password : "0B2323505365F07044E3782E107347ECA2FB",
+    Password : "Bugs#123",
     To : email2,
     From : "bugsmashers01@gmail.com",
     Subject : "Electro Trade Welcomes You ",
